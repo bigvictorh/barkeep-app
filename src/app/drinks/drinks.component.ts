@@ -9,16 +9,21 @@ import { DRINKS } from '../mock-drinks';
 })
 export class DrinksComponent implements OnInit {
 
-  drink: Drink = {
-    id: 1,
-    name: 'Old Fashioned'
-  };
-
   drinks = DRINKS;
+
+  selectedDrink: Drink;
+
+  
+
+  
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onSelect(drink: Drink): void {
+    this.selectedDrink = drink;
   }
 
 }
