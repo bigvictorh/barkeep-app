@@ -1,11 +1,11 @@
 <h2>Drink Menu</h2>
-<ul class=drinks>
-  <li *ngFor="let drink of drinks"
-    [class.selected]="drink === selectedDrink"
-    (click)="onSelect(drink)">
-    <span class="badge">{{drink.id}}</span> {{drink.name}}
-  </li>
-</ul>
+  <ul class=drinks>
+    <li *ngFor="let drink of drinks"
+      [class.selected]="drink === selectedDrink"
+      (click)="onSelect(drink)">
+      <span class="badge">{{drink.id}}</span> {{drink.name}}
+    </li>
+  </ul>
 
-<app-drink-detail [drink]="selectedDrink"></app-drink-detail>
+  <app-drink-detail [drink]="selectedDrink"></app-drink-detail>
  

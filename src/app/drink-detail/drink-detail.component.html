@@ -2,10 +2,10 @@
  
   <h2>{{drink.name | uppercase}} Details</h2>
   <div><span>id: </span>{{drink.id}}</div>
-  <div>
-    <label>name:
-      <input [(ngModel)]="drink.name" placeholder="name">
-    </label>
-  </div>
+  <div><span>description: </span>{{drink.description}}</div>
+  <div><span>ingredients: </span>{{drink.ingredients}}</div>
+  <div><span>identifiers: </span>{{drink.identifiers}}</div>
+  <div><span>rating: </span>{{drink.rating}}</div>
+  <div>{{drink.image}}</div>
  
 </div>
