@@ -6,15 +6,6 @@
     <span class="badge">{{drink.id}}</span> {{drink.name}}
   </li>
 </ul>
+
+<app-drink-detail [drink]="selectedDrink"></app-drink-detail>
  
-<div *ngIf="selectedDrink">
- 
-  <h2>{{selectedDrink.name | uppercase}} Details</h2>
-  <div><span>id: </span>{{selectedDrink.id}}</div>
-  <div>
-    <label>name:
-      <input [(ngModel)]="selectedDrink.name" placeholder="name">
-    </label>
-  </div>
- 
-</div>
