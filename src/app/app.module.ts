@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { DrinkListComponent } from './drink-list/drink-list.component';
 import { DrinksComponent } from './drinks/drinks.component';
 import { DrinkDetailComponent } from './drink-detail/drink-detail.component';
+import { FilterPipe } from './filter.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     DrinkListComponent,
     DrinksComponent,
-    DrinkDetailComponent
+    DrinkDetailComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,

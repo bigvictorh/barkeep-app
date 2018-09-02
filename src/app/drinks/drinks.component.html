@@ -1,10 +1,12 @@
 <h2>Drink Menu</h2>
+  <input [(ngModel)]="searchText" placeholder="search your drink">
   <ul class=drinks>
-    <li *ngFor="let drink of drinks"
+    <li *ngFor="let drink of drinks | filter : searchText"
       [class.selected]="drink === selectedDrink"
       (click)="onSelect(drink)">
       <span class="badge">{{drink.id}}</span> {{drink.name}}
     </li>
+    
   </ul>
 
   <app-drink-detail [drink]="selectedDrink"></app-drink-detail>

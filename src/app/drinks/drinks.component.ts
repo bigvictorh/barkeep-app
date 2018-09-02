@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Drink } from '../drink';
 import { DRINKS } from '../mock-drinks';
 
+
 @Component({
   selector: 'app-drinks',
   templateUrl: './drinks.component.html',
@@ -10,6 +11,12 @@ import { DRINKS } from '../mock-drinks';
 export class DrinksComponent implements OnInit {
 
   drinks = DRINKS;
+
+  // drinks = [
+  //   {name: "Old Fashioned", id: 1},
+  //   {name: "Juan Collins", id: 2},
+  //   {name: "Japanese Slipper", id: 3}
+  // ];
 
   selectedDrink: Drink;
 
