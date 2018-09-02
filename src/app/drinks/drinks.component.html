@@ -1,4 +1,16 @@
 <h2>Drink Menu</h2>
+  <div>
+    <span>
+      <h5>Sour</h5>
+      <input [(ngModel)]="test" [checked]="test" type="checkbox" (Change) = "checkClicked(test)">
+      <h5>Sweet</h5>
+    </span>
+  </div>
+
+  <select>
+    <option value="name">Alphabetical</option>
+    <option value="rating">Ranking</option>
+  </select>
   <input [(ngModel)]="searchText" placeholder="search your drink">
   <ul class=drinks>
     <li *ngFor="let drink of drinks | filter : searchText"

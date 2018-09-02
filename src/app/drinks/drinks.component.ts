@@ -10,6 +10,7 @@ import { DRINKS } from '../mock-drinks';
 })
 export class DrinksComponent implements OnInit {
 
+  test : boolean = true;
   drinks = DRINKS;
 
   // drinks = [
@@ -32,5 +33,14 @@ export class DrinksComponent implements OnInit {
   onSelect(drink: Drink): void {
     this.selectedDrink = drink;
   }
+
+  checkClicked(val){
+    if(val){
+      this.test = false;
+    } else{
+      this.test = true;
+    }
+    console.log(val);
+}
 
 }
